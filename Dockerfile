@@ -6,7 +6,7 @@ RUN apt-get update \
     && apt-get install -y apt-transport-https ca-certificates imagemagick libmagickwand-dev libfontconfig rsync
 
 RUN apt-get update \
-    && apt-get install -y openssh-client libpq-dev
+    && apt-get install -y openssh-client libpq-dev postgresql-client
 
 RUN \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
